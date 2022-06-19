@@ -10,4 +10,4 @@ const App = () => {
   )
 }
 
-export default App;asdasd
+export default App;
