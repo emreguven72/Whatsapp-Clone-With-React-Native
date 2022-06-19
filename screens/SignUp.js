@@ -65,10 +65,14 @@ const SignUp = () => {
                 <PhoneInput placeholder='Enter your phone email' placeholderTextColor='white'/>
                 <PhoneInput placeholder='Enter your password' placeholderTextColor='white'/>
                 <ButtonArea>
-                    <SignInButton>
+                    <SignInButton 
+                        onPress={{}}
+                        >
                         <ButtonText>Signin</ButtonText>
                     </SignInButton>
-                    <SignUpButton>
+                    <SignUpButton
+                        onPress={{}}
+                        >
                         <ButtonText>Signup</ButtonText>
                     </SignUpButton>
                 </ButtonArea>
