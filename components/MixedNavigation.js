@@ -7,7 +7,7 @@ import Chats from '../screens/Chats';
 import Settings from '../screens/Settings';
 import { colors } from '../config/Config';
 import SignUp from '../screens/SignUp';
-
+import Chat from '../screens/Chat';
 
 const MainStack = createNativeStackNavigator();
 
@@ -47,6 +47,7 @@ const ChatsScreen = () => {
             screenOptions={{headerShown:false}}
         >
             <ChatsStack.Screen name='ChatsScreen' component={Chats}/>
+            <ChatsStack.Screen name='ChatScreen' component={Chat}/>
         </ChatsStack.Navigator>
     )
 }
