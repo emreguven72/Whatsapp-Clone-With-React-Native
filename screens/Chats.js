@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { StatusBar, Button } from 'react-native';
 import TopBar from '../components/TopBar';
@@ -10,7 +10,14 @@ const Container = styled.SafeAreaView({
   backgroundColor: colors.grayBackground,
 })
 
-const Chats = () => {
+const Chats = ({ navigation }) => {
+  useEffect(() => {
+    const isLoggedIn = false;
+    if(!isLoggedIn) {
+      navigation.navigate('SignUpScreen')
+    }
+  }, []); //useEffect icerisindeki kodlar Chats sayfasi ilk yuklendiginde calisir.
+
   return(
     <Container>
       <StatusBar backgroundColor={colors.topBarColor}/>

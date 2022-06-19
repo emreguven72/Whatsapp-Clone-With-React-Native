@@ -4,9 +4,10 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-ionicons';
 import Chats from '../screens/Chats';
-import { Button, Text, View } from 'react-native';
 import Settings from '../screens/Settings';
 import { colors } from '../config/Config';
+import SignUp from '../screens/SignUp';
+
 
 const MainStack = createNativeStackNavigator();
 
@@ -71,6 +72,7 @@ const MixedNavigation = () => {
                 }}
                 >
                 <MainStack.Screen name='HomeScreen' component={HomeScreen}/>
+                <MainStack.Screen name='SignUpScreen' component={SignUp}/>
             </MainStack.Navigator>
         </NavigationContainer>
     )

@@ -25,6 +25,10 @@ const Seperator = styled.View({
     backgroundColor: 'black',
 })
 
+const LogoutFunc = () => {
+    alert('You have successfuly logged out.')
+}
+
 const Settings = () => {
     return(
         <Container>
@@ -42,6 +46,10 @@ const Settings = () => {
             <Seperator/>
             <Setting>
                 <SettingText>Add Friends</SettingText>
+            </Setting>
+            <Seperator/>
+            <Setting onPress={LogoutFunc}>
+                <SettingText>Logout</SettingText>
             </Setting>
             <Seperator/>
         </Container>
